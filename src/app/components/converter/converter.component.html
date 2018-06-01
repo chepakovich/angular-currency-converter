@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="jumbotron text-center">
+    <h2>Currency Converter</h2>
+  </div> 
+  <p>Amount and currency to convert</p>
+  <div class="row">
+    <div class="col-sm-7">
+      <input type="number" class="form-control" id="text-input-id-1" placeholder="0.00" min="0" [(ngModel)]="amount1" (ngModelChange)="changeBaseAmount()" />
+    </div>
+    <div class="col-sm-5">
+      <select class="form-control" id="select-01" [(ngModel)]="currency1" (ngModelChange)="changeBaseCurrency(currency1)" placeholder="Please Select">
+        <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+      </select>
+    </div>
+  </div>
+  <p>Converted amount and currency:</p>
+  <div class="row">
+    <div class="col-sm-7">
+      <input type="number" class="form-control" id="text-input-id-1" placeholder="0.00" min="0" [(ngModel)]="amount2" (ngModelChange)="calculateBase()" />
+    </div>
+    <div class="col-sm-5">
+      <select class="form-control" id="select-01" [(ngModel)]="currency2" (ngModelChange)="changeConvertedCurrency()">
+        <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+      </select>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+<span> <p> Welcome to the application, here is where your main code will lie  </p></span>
+.overall-container{
+    width: 350px !important;
+    height: 350px !important;
+}
+
+  .hdca-product-box__header-intro-img {
+    display: block;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0); }
+
+
+    <div class="hdca-product-box-container overall-container" itemscope="" itemtype="http://schema.org/Product">
+    <article class="hdca-product-box">
+      <section class="hdca-product-box__header">
+        <div class="hdca-product-box__header-compare">
+          <div class="hdca-form-field">
+            <div class="hdca-form-field__container">
+              <label class="hdca-form-field__wrap-label" for="default">
+                <div class="hdca-checkbox">
+                  <input type="checkbox" id="default" name="default" class="hdca-checkbox__checkbox" />
+                  <span class="hdca-checkbox__faux-checkbox"></span>
+                </div>
+                <span class="hdca-form-field__label-text">Compare</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="hdca-product-box__header-intro">
+          <div class="hdca-product-box__header-intro-img-box">
+            <img class="hdca-product-box__header-intro-img" src="assets/images/products/product_1.jpg" alt="can not find image" itemprop="image" />
+          </div>
+        </div>
+      </section>
+      <section class="hdca-product-box__main">
+        <div class="hdca-product-box__main-info">
+          <link itemprop="url" href="#" />
+          <div class="hdca-product-box__main-info-label">
+            <span class="hdca-product-box__main-info-label-entry hdca-product-box__main-info-label-entry--brand" itemprop="manufacturer">Home Decorators Collection</span>
+            <span class="hdca-product-box__main-info-label-entry" itemprop="name">12mm Wintour Maple Classic Laminate Flooring (17.26 sq. ...</span>
+          </div>
+          
+          <div class="hdca-product-box__main-info-detail">
+            <div class="hdca-product-box__main-info-detail-entry">Model #
+              <span itemprop="model">7L12X165/8045CL</span>
+            </div>
+            <div class="hdca-product-box__main-info-detail-entry">SKU #
+              <span itemprop="sku">1001002632</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hdca-product-box__main-purchase">
+          <div class="hdca-product-box__main-purchase-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+            <span itemprop="priceCurrency" content="CAD"></span>
+            <link itemprop="itemCondition" href="http://schema.org/NewCondition" content="New" />
+            <div class="hdca-product-box__main-purchase-price-entry">
+              <span class="hdca-product-box__main-purchase-price-entry-content hdca-product-box__main-purchase-price-entry-content--primary">$
+                <span itemprop="price">34.00</span>
+              </span>
+              <span class="hdca-product-box__main-purchase-price-entry-content"> / case</span>
+            </div>
+          </div>
+          <div class="hdca-product-box__main-purchase-action">
+            <button class="hdca-button hdca-product-box__main-purchase-action-item hdca-button--secondary hdca-button--large">View Details</button>
+          </div>
+        </div>
+      </section>
+    </article>
+  </div>
